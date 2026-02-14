@@ -20,6 +20,14 @@ namespace EjercicioGit
             // Simulación de Viajes (10 Km y luego 30 Km)
             foreach (var v in flota) v.RecorrerKilometros(10);
             foreach (var v in flota) v.RecorrerKilometros(30);
+
+            // Mostrar Resultados
+            Console.WriteLine("--- Resultados finales del sistema ---");
+            foreach (var v in flota)
+            {
+                v.MostrarInformacion();
+                Console.WriteLine($"Costo Total del Viaje: Lps. {v.CalcularCostoViaje()}\n");
+            }
         }
     }
 }

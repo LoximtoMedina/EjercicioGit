@@ -8,7 +8,7 @@ namespace EjercicioGit
         static void Main(string[] args)
         {
             // Datos
-            Console.WriteLine("Alumno: Cristian Josué Medina Galeano - 20251900163");
+            Console.WriteLine("\nAlumno: Cristian Josué Medina Galeano - 20251900163");
 
             // Instancias
             BusUrbano miBus = new BusUrbano("BUS-504", 40, 80);
@@ -22,7 +22,7 @@ namespace EjercicioGit
             foreach (var v in flota) v.RecorrerKilometros(30);
 
             // Mostrar Resultados
-            Console.WriteLine("--- Resultados finales del sistema ---");
+            Console.WriteLine("\n\n--- Resultados finales del sistema ---");
             foreach (var v in flota)
             {
                 v.MostrarInformacion();
